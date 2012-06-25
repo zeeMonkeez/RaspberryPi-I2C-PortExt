@@ -10491,6 +10491,52 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 </deviceset>
 </devicesets>
 </library>
+<library name="frames">
+<description>&lt;b&gt;Frames for Sheet and Layout&lt;/b&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="A4L-LOC">
+<wire x1="256.54" y1="3.81" x2="256.54" y2="8.89" width="0.1016" layer="94"/>
+<wire x1="256.54" y1="8.89" x2="256.54" y2="13.97" width="0.1016" layer="94"/>
+<wire x1="256.54" y1="13.97" x2="256.54" y2="19.05" width="0.1016" layer="94"/>
+<wire x1="256.54" y1="19.05" x2="256.54" y2="24.13" width="0.1016" layer="94"/>
+<wire x1="161.29" y1="3.81" x2="161.29" y2="24.13" width="0.1016" layer="94"/>
+<wire x1="161.29" y1="24.13" x2="215.265" y2="24.13" width="0.1016" layer="94"/>
+<wire x1="215.265" y1="24.13" x2="256.54" y2="24.13" width="0.1016" layer="94"/>
+<wire x1="246.38" y1="3.81" x2="246.38" y2="8.89" width="0.1016" layer="94"/>
+<wire x1="246.38" y1="8.89" x2="256.54" y2="8.89" width="0.1016" layer="94"/>
+<wire x1="246.38" y1="8.89" x2="215.265" y2="8.89" width="0.1016" layer="94"/>
+<wire x1="215.265" y1="8.89" x2="215.265" y2="3.81" width="0.1016" layer="94"/>
+<wire x1="215.265" y1="8.89" x2="215.265" y2="13.97" width="0.1016" layer="94"/>
+<wire x1="215.265" y1="13.97" x2="256.54" y2="13.97" width="0.1016" layer="94"/>
+<wire x1="215.265" y1="13.97" x2="215.265" y2="19.05" width="0.1016" layer="94"/>
+<wire x1="215.265" y1="19.05" x2="256.54" y2="19.05" width="0.1016" layer="94"/>
+<wire x1="215.265" y1="19.05" x2="215.265" y2="24.13" width="0.1016" layer="94"/>
+<text x="217.17" y="15.24" size="2.54" layer="94" font="vector">&gt;DRAWING_NAME</text>
+<text x="217.17" y="10.16" size="2.286" layer="94" font="vector">&gt;LAST_DATE_TIME</text>
+<text x="230.505" y="5.08" size="2.54" layer="94" font="vector">&gt;SHEET</text>
+<text x="216.916" y="4.953" size="2.54" layer="94" font="vector">Sheet:</text>
+<frame x1="0" y1="0" x2="260.35" y2="179.07" columns="6" rows="4" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="A4L-LOC" prefix="FRAME" uservalue="yes">
+<description>&lt;b&gt;FRAME&lt;/b&gt;&lt;p&gt;
+DIN A4, landscape with location and doc. field</description>
+<gates>
+<gate name="G$1" symbol="A4L-LOC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -10517,10 +10563,10 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <part name="X2" library="pinhead" deviceset="PINHD-1X10" device=""/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="R3" library="smdParts" deviceset="R-EU_" device="R1206" value="10k"/>
+<part name="R3" library="smdParts" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
-<part name="R1" library="smdParts" deviceset="R-EU_" device="R1206" value="4k7"/>
-<part name="R2" library="smdParts" deviceset="R-EU_" device="R1206" value="4k7"/>
+<part name="R1" library="smdParts" deviceset="R-EU_" device="R0805" value="4k7"/>
+<part name="R2" library="smdParts" deviceset="R-EU_" device="R0805" value="4k7"/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="X4" library="SD" deviceset="SSW-108-02-S-T" device=""/>
@@ -10528,15 +10574,15 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <part name="IC2" library="74xx-little-us" deviceset="74*1G07" device="DCK" technology="LVC"/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="R4" library="smdParts" deviceset="R-EU_" device="R1206" value="10k"/>
-<part name="IC3" library="74xx-little-us" deviceset="74*1G07" device="DCK" technology="LVC"/>
-<part name="P+7" library="supply1" deviceset="+5V" device=""/>
-<part name="GND7" library="supply1" deviceset="GND" device=""/>
+<part name="R4" library="smdParts" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="C3" library="resistor" deviceset="CPOL-EU" device="E2.5-5" value="100u"/>
 <part name="C4" library="resistor" deviceset="C-EU" device="050-025X075" value="100n"/>
-<part name="R5" library="smdParts" deviceset="R-EU_" device="R1206" value="10k"/>
+<part name="R5" library="smdParts" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
+<part name="FRAME1" library="frames" deviceset="A4L-LOC" device="" value="Jonas"/>
+<part name="T3" library="smdParts" deviceset="BSS138PW" device="&quot;"/>
+<part name="R6" library="smdParts" deviceset="R-EU_" device="R0805" value="1k"/>
 </parts>
 <sheets>
 <sheet>
@@ -10545,10 +10591,7 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <text x="5.08" y="50.8" size="1.778" layer="97">Address selection</text>
 <text x="-73.66" y="88.9" size="1.778" layer="97">RaspberryPi GPIO</text>
 <text x="-73.66" y="3.81" size="1.778" layer="97">I2C Level Shifter</text>
-<frame x1="-113.03" y1="-29.21" x2="128.27" y2="152.4" columns="8" rows="5" layer="94"/>
-<text x="60.96" y="114.3" size="1.778" layer="97">Fit either R5 OR IC3 and R4</text>
-<wire x1="63.5" y1="114.3" x2="63.5" y2="105.41" width="0.1524" layer="97"/>
-<wire x1="63.5" y1="105.41" x2="46.99" y2="88.9" width="0.1524" layer="97"/>
+<text x="109.22" y="-2.54" size="2.54" layer="94">Jonas Zimmermann</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="66.04" y="66.04"/>
@@ -10617,19 +10660,21 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <instance part="IC2" gate="P" x="17.78" y="106.68" rot="R90"/>
 <instance part="+3V3" gate="G$1" x="10.16" y="114.3"/>
 <instance part="GND6" gate="1" x="25.4" y="101.6"/>
-<instance part="R4" gate="G$1" x="13.97" y="87.63" rot="R90"/>
-<instance part="IC3" gate="A" x="30.48" y="78.74" smashed="yes">
-<attribute name="NAME" x="33.02" y="81.915" size="1.778" layer="95"/>
-<attribute name="VALUE" x="20.32" y="83.82" size="1.778" layer="96"/>
-</instance>
-<instance part="IC3" gate="P" x="43.18" y="106.68" rot="R90"/>
-<instance part="P+7" gate="1" x="35.56" y="114.3"/>
-<instance part="GND7" gate="1" x="50.8" y="101.6"/>
-<instance part="+3V4" gate="G$1" x="13.97" y="97.79"/>
+<instance part="R4" gate="G$1" x="24.13" y="86.36" rot="R90"/>
+<instance part="+3V4" gate="G$1" x="24.13" y="97.79"/>
 <instance part="C3" gate="G$1" x="81.28" y="82.55" rot="R90"/>
 <instance part="C4" gate="G$1" x="81.28" y="96.52" rot="R90"/>
 <instance part="R5" gate="G$1" x="45.72" y="83.82" rot="R90"/>
 <instance part="P+6" gate="1" x="45.72" y="97.79"/>
+<instance part="FRAME1" gate="G$1" x="-109.22" y="-22.86" smashed="yes">
+<attribute name="DRAWING_NAME" x="107.95" y="-7.62" size="2.54" layer="94" font="vector"/>
+<attribute name="LAST_DATE_TIME" x="107.95" y="-12.7" size="2.286" layer="94" font="vector"/>
+<attribute name="SHEET" x="121.285" y="-17.78" size="2.54" layer="94" font="vector"/>
+</instance>
+<instance part="T3" gate="G$1" x="34.29" y="81.28" smashed="yes" rot="R270">
+<attribute name="NAME" x="33.02" y="73.66" size="1.778" layer="95"/>
+</instance>
+<instance part="R6" gate="G$1" x="-2.54" y="71.12" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -10712,11 +10757,6 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <pinref part="IC2" gate="P" pin="GND"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="25.4" y1="106.68" x2="25.4" y2="104.14" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="IC3" gate="P" pin="GND"/>
-<pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="50.8" y1="104.14" x2="50.8" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="I2CB_SDA" class="0">
@@ -10809,11 +10849,6 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="P+5" gate="1" pin="+5V"/>
 <wire x1="17.78" y1="45.72" x2="17.78" y2="43.18" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="IC3" gate="P" pin="VCC"/>
-<pinref part="P+7" gate="1" pin="+5V"/>
-<wire x1="35.56" y1="111.76" x2="35.56" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
@@ -10989,9 +11024,9 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 </net>
 <net name="IO_INT" class="0">
 <segment>
-<wire x1="5.08" y1="71.12" x2="-5.08" y2="71.12" width="0.1524" layer="91"/>
-<label x="-5.08" y="68.58" size="1.778" layer="95"/>
-<pinref part="IC2" gate="A" pin="O"/>
+<label x="-13.97" y="72.39" size="1.778" layer="95"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="-7.62" y1="71.12" x2="-11.43" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="X4" gate="-3" pin="1"/>
@@ -11048,13 +11083,13 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <label x="-66.04" y="97.79" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC3" gate="A" pin="I"/>
-<wire x1="20.32" y1="78.74" x2="13.97" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="29.21" y1="78.74" x2="24.13" y2="78.74" width="0.1524" layer="91"/>
 <label x="5.08" y="78.74" size="1.778" layer="95"/>
 <pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="13.97" y1="78.74" x2="5.08" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="13.97" y1="82.55" x2="13.97" y2="78.74" width="0.1524" layer="91"/>
-<junction x="13.97" y="78.74"/>
+<wire x1="24.13" y1="78.74" x2="5.08" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="24.13" y1="81.28" x2="24.13" y2="78.74" width="0.1524" layer="91"/>
+<junction x="24.13" y="78.74"/>
+<pinref part="T3" gate="G$1" pin="S"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -11082,7 +11117,13 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <segment>
 <pinref part="+3V4" gate="G$1" pin="+3V3"/>
 <pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="13.97" y1="95.25" x2="13.97" y2="92.71" width="0.1524" layer="91"/>
+<wire x1="24.13" y1="95.25" x2="24.13" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="T3" gate="G$1" pin="G"/>
+<wire x1="24.13" y1="93.98" x2="24.13" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="31.75" y1="86.36" x2="31.75" y2="92.71" width="0.1524" layer="91"/>
+<wire x1="31.75" y1="92.71" x2="31.75" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="31.75" y1="93.98" x2="24.13" y2="93.98" width="0.1524" layer="91"/>
+<junction x="24.13" y="93.98"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -11151,12 +11192,19 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <segment>
 <pinref part="IC1" gate="G$1" pin="/RST"/>
 <label x="40.64" y="76.2" size="1.778" layer="95"/>
-<pinref part="IC3" gate="A" pin="O"/>
 <wire x1="45.72" y1="76.2" x2="50.8" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="78.74" x2="45.72" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="39.37" y1="78.74" x2="45.72" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="78.74" x2="45.72" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
 <junction x="45.72" y="78.74"/>
+<pinref part="T3" gate="G$1" pin="D"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="IC2" gate="A" pin="O"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="2.54" y1="71.12" x2="5.08" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -11165,7 +11213,6 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <errors>
 <approved hash="104,1,66.04,86.36,IC1,VCC,+5V,,,"/>
 <approved hash="104,1,10.16,106.68,IC2P,VCC,+3V3,,,"/>
-<approved hash="104,1,35.56,106.68,IC3P,VCC,+5V,,,"/>
 <approved hash="106,1,-53.34,68.58,RXD,,,,,"/>
 <approved hash="106,1,-53.34,50.8,SPI0_CE0,,,,,"/>
 <approved hash="106,1,-53.34,48.26,SPI0_CE1,,,,,"/>
