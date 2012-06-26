@@ -1,7 +1,9 @@
 RaspberryPi-I2C-PortExt
 =======================
 
-This is an I2C 8bit port extender for RaspberryPi using an MCP23008.
+This is a 5V I2C 8bit port extender for RaspberryPi using an MCP23008.
+Use this to connect up to 8 digital lines as inputs or outputs, with a programmable interrupt line to notify RaspberryPi of changes.
+All at the 5V level.
 
 Using an appropriate header/socket (e.g. SAMTEC ESQ-113-24-T-D, Farnell 1930727) the module is stackable.
 Pinheader X3 can be fitted to select the address of the MCP with jumpers. If not fitted, wire jumpers have to be soldered in.
