@@ -10591,7 +10591,7 @@ DIN A4, landscape with location and doc. field</description>
 <text x="5.08" y="50.8" size="1.778" layer="97">Address selection</text>
 <text x="-73.66" y="88.9" size="1.778" layer="97">RaspberryPi GPIO</text>
 <text x="-73.66" y="3.81" size="1.778" layer="97">I2C Level Shifter</text>
-<text x="109.22" y="-2.54" size="2.54" layer="94">Jonas Zimmermann</text>
+<text x="107.95" y="-2.54" size="2.54" layer="94">Jonas Zimmermann</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="66.04" y="66.04"/>
